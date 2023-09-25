@@ -7,7 +7,7 @@
          "matches": ["*://*/*"],
          "run_at": "document_start",
          "all_frames": false,
-         "js": ["contentScript.js"]
+         "js": ["thirds/jquery-3.6.1.min.js", "contentScript.js"]
       }
    ],
    "action": {
@@ -22,8 +22,7 @@
    "manifest_version": 3,
    "name": "Twitch Low Latency",
    "permissions": [
-      "activeTab",
-      "storage"
+      "activeTab"
    ],
    "host_permissions": ["<all_urls>"],
    "version": "1.0.0",

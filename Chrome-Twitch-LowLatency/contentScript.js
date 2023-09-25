@@ -5,7 +5,8 @@ chrome.runtime.onMessage.addListener(
     if (request.message === 'lowlatency!') {
       let video = $("video")
 
-      if(video.length == 0)
+      if(video.length == 1)
+        video = video[0]
         video.currentTime = video.buffered.end(0)
     }
   }
