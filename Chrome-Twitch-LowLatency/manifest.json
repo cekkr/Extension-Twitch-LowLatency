@@ -5,9 +5,9 @@
    "content_scripts": [
       {
          "matches": ["https://*.twitch.tv/*"],
-         "run_at": "document_start",
+         "run_at": "document_end",
          "all_frames": true,
-         "js": ["thirds/jquery-3.6.1.min.js", "contentScript.js"]
+         "js": ["thirds/jquery-3.7.1.min.js", "cSTLL.js"]
       }
    ],
    "action": {
@@ -27,7 +27,7 @@
    ],
    "host_permissions": ["https://*.twitch.tv/*"],
    "optional_host_permissions": ["<all_urls>"],
-   "version": "1.0.1",
+   "version": "1.0.3",
    "author": "cekkr",
    "homepage_url": "https://github.com/cekkr/Extension-Twitch-LowLatency"
 }
